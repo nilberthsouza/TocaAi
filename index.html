@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Botão de Áudio</title>
+</head>
+<body>
+	<button id="audio-btn">Clique para ouvir o som</button>
+	<audio id="audio" src="audio.mp3"></audio>
+
+	<script>
+		var audioBtn = document.getElementById("audio-btn");
+		var audio = document.getElementById("audio");
+
+		audioBtn.addEventListener("click", function() {
+			audio.play();
+		})
+	</script>
+</body>
+</html>
